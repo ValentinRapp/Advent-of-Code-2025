@@ -21,7 +21,7 @@ with open("input.txt", "r") as file:
 dial1 = Dial(50, 100, True)
 dial2 = Dial(50, 100, False)
 
-list(map(lambda elem : dial1.rotate(elem), data))
-list(map(lambda elem : dial2.rotate(elem), data))
+[dial1.rotate(elem) for elem in data]
+[dial2.rotate(elem) for elem in data]
 
 print(f"part1: {dial1.password}\npart2: {dial2.password}")
